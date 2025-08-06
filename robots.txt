@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://alexmadeira23.github.io/blog/sitemap-index.xml
