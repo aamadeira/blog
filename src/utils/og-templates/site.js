@@ -105,7 +105,7 @@ export default async () => {
                           type: "span",
                           props: {
                             style: { overflow: "hidden", fontWeight: "bold" },
-                            children: new URL(SITE.website).hostname,
+                            children: SITE.website,
                           },
                         },
                       },
