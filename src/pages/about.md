@@ -3,33 +3,38 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Hi there! I'm **Alexandre Madeira**, or **Alex** for short, and welcome to my corner of the internet.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+I started this blog to talk about the things I love in the tech world. My passion lies in both **hardware** and **software**, and I enjoy exploring the fascinating intersection between them.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+On the **hardware side**, I'm fascinated by everything from the latest phones and computers to gaming consoles and retro systems. I love keeping up with new device releases and staying current with updates in the hardware world.
 
-## Features
+When it comes to **software**, I love tinkering and tweaking my devices to transform them into their most practical and productive forms across different operating systems. I'm particularly drawn to Unix-based systems like Linux and macOS, where I enjoy diving into terminals and customizing environments. As a software developer by day (and often by night!), I also enjoy sharing insights about programming and development practices. I'm also a gaming enthusiast, from modern indies to retro classics, with a particular interest in emulation.
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+## What You'll Find Here
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+This blog is where I share my thoughts on the ever-evolving tech landscape. Here, you'll discover:
 
-and so much more.
+- **Hardware insights** about new device releases, gaming consoles, and retro systems
+- **Software tweaks and tips** for optimizing Unix-based systems and workflows
+- **Programming tutorials** covering development concepts, tools, and frameworks
+- **Code examples** and practical solutions to real-world problems
+- **Insights and discussions** about the latest trends in software development
+- **Technical deep-dives** into topics that fascinate me in the tech world
+- **Maybe occasionally** some non-tech stuff like movies or superheroes (no promises though!)
 
-## Show your support
+## My Mission
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+My goal is to create content that's both informative and accessible, whether you're exploring hardware for the first time, diving into Unix systems, or you're a seasoned developer looking for fresh perspectives on programming and workflows. I believe in learning by doing and sharing knowledge openly with the community.
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
+## A Bit About Me
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
+I've always been obsessed with technology and knew early on that I wanted to make it my career. I was fortunate to have access to computers from a young age, which allowed me to explore and learn about technology hands-on. Over the years, I've studied and honed my skills in software development, working on various projects and collaborating with other developers.
 
-Kyay zuu! 🙏🏼
+When I'm not coding or tinkering with tech, you can find me diving into a good book, binge-watching the latest movies and TV shows, or gaming on one of the many handheld consoles I own (and yes, I might have a slight collection problem). I'm a huge fan of pop culture, science fiction, rock music, puzzle solving, and anything that challenges my mind.
+
+## Let's Connect
+
+Feel free to reach out if you have questions, suggestions, or just want to chat about tech. I'm always excited to connect with fellow developers and tech enthusiasts!
+
+Thanks for stopping by, and I hope you find something valuable here at LexTech.

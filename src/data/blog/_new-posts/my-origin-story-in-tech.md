@@ -4,7 +4,7 @@ description: My journey into the tech world, from my first computer to becoming 
 pubDatetime: 2025-08-06T19:58:00+01:00
 modDatetime: null
 featured: true
-draft: false
+draft: true
 tags:
   - origin-story
   - journey

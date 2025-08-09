@@ -4,7 +4,7 @@ description: An introduction to me and my blog.
 pubDatetime: 2025-08-06T18:58:00+01:00
 modDatetime: null
 featured: true
-draft: false
+draft: true
 tags:
   - introduction
 ---
