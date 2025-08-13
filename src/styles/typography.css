@@ -44,7 +44,7 @@
     }
 
     img {
-      @apply mx-auto border border-border;
+      @apply mx-auto rounded-xl border border-border shadow-md;
     }
 
     figcaption {
@@ -52,13 +52,23 @@
     }
 
     table {
+      @apply border-separate border-spacing-0 overflow-hidden rounded-lg border border-border;
+
       th,
       td {
-        @apply border border-border p-2;
+        @apply p-2;
       }
 
       th {
-        @apply py-1.5;
+        @apply bg-muted py-1.5;
+      }
+
+      tbody tr:nth-child(even) {
+        @apply bg-muted/30;
+      }
+
+      tbody tr:nth-child(odd) {
+        @apply bg-background;
       }
 
       code {
