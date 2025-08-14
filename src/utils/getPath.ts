@@ -21,7 +21,7 @@ export function getPath(
     .slice(0, -1) // remove the last segment_ file name_ since it's unnecessary
     .map(segment => slugifyStr(segment)); // slugify each segment path
 
-  const basePath = includeBase ? "/posts" : "";
+  const basePath = includeBase ? withBase("/posts") : "";
 
   // Making sure `id` does not contain the directory
   const blogId = id.split("/");
@@ -34,3 +34,11 @@ export function getPath(
 
   return [basePath, ...pathSegments, slug].join("/");
 }
+
+export const BASE = (() => {
+  const astroBase = import.meta.env.BASE_URL;
+  return astroBase === "/" ? "" : astroBase;
+})();
+
+export const withBase = (path: string) =>
+  (path === "/" ? BASE : BASE + path) || "/";

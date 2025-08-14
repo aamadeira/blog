@@ -1,10 +1,21 @@
 ---
+import { BASE, withBase } from "@/utils/getPath";
+
 // Remove current url path and remove trailing slash if exists
 const currentUrlPath = Astro.url.pathname.replace(/\/+$/, "");
 
 // Get url array from path
 // eg: /tags/tailwindcss => ['tags', 'tailwindcss']
-const breadcrumbList = currentUrlPath.split("/").slice(1);
+const breadcrumbList = (() => {
+  const list = currentUrlPath.split("/").slice(1);
+
+  if (BASE) {
+    const basePath = BASE.replace(/\/+$/, "").replace(/^\//, "");
+    return list.filter((part) => part !== basePath);
+  }
+
+  return list;
+})();
 
 // if breadcrumb is Home > Posts > 1 <etc>
 // replace Posts with Posts (page number)
@@ -28,11 +39,11 @@ if (breadcrumbList[0] === "tags" && !isNaN(Number(breadcrumbList[2]))) {
     class="font-light [&>li]:inline [&>li:not(:last-child)>a]:hover:opacity-100"
   >
     <li>
-      <a href="/" class="opacity-80">Home</a>
+      <a href={withBase("/")} class="opacity-80">Home</a>
       <span aria-hidden="true" class="opacity-80">&raquo;</span>
     </li>
     {
-      breadcrumbList.map((breadcrumb, index) =>
+      breadcrumbList.filter((breadcrumb) => breadcrumb != withBase("/")).map((breadcrumb, index) =>
         index + 1 === breadcrumbList.length ? (
           <li>
             <span
@@ -45,7 +56,7 @@ if (breadcrumbList[0] === "tags" && !isNaN(Number(breadcrumbList[2]))) {
           </li>
         ) : (
           <li>
-            <a href={`/${breadcrumb}/`} class="capitalize opacity-70">
+            <a href={withBase(`/${breadcrumb}`)} class="capitalize opacity-70">
               {breadcrumb}
             </a>
             <span aria-hidden="true">&raquo;</span>

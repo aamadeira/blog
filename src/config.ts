@@ -1,5 +1,5 @@
 export const SITE = {
-  website: "https://alexmadeira23.github.io/blog/", // replace this with your deployed domain
+  website: "https://alexmadeira23.github.io/blog/",
   author: "Alexandre Madeira",
   profile: "https://alexmadeira23.github.io/",
   desc: "A personal tech blog by Alexandre Madeira.",
@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: false,
     text: "Edit page",
-    url: "https://github.com/alexmadeira23/personal-blog/edit/main/",
+    url: "https://github.com/alexmadeira23/blog/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
