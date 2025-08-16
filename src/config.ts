@@ -1,7 +1,7 @@
 export const SITE = {
-  website: "https://alexmadeira23.github.io/blog/",
+  website: "https://aamadeira.github.io/blog/",
   author: "Alexandre Madeira",
-  profile: "https://alexmadeira23.github.io/",
+  profile: "https://aamadeira.github.io/",
   desc: "A personal tech blog by Alexandre Madeira.",
   title: "LexTech",
   ogImage: "og.png",
@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: false,
     text: "Edit page",
-    url: "https://github.com/alexmadeira23/blog/edit/main/",
+    url: "https://github.com/aamadeira/blog/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
