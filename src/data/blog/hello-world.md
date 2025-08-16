@@ -81,7 +81,9 @@ Fast-forward a few years and I finally discovered that this profession I was see
 
 > Dang-it, I don't even know what that is...
 
-I'd already spent the last years of my life telling everyone I knew what I wanted to become when I was an adult, and now I had discovered that it wasn't what I thought it was. What do you mean these people don't tinker with computers for a living? What else are computers even for?
+I'd already spent the last years of my life telling everyone I knew what I wanted to become when I was an adult, and now I had discovered that it wasn't what I thought it was.
+
+> What do you mean these people don't tinker with computers for a living? What else are computers even for?
 
 I guess at this time, I simply decided to accept the fact that it was more about programming than anything and still go through with it, since it's still related to computers and from what I heard, it was one of the best-paying professions one could have since demand kept on increasing for jobs in these positions. At least that's what my parents told me.
 
