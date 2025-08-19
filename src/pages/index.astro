@@ -19,11 +19,12 @@ const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const backUrl = withBase("/");
 ---
 
 <Layout>
   <Header />
-  <main id="main-content" data-layout="index">
+  <main id="main-content" data-layout="index" data-backUrl={backUrl}>
     <section id="hero" class="pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
         Welcome to LexTech
@@ -113,10 +114,12 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
 <script>
   document.addEventListener("astro:page-load", () => {
-    const indexLayout = (document.querySelector("#main-content") as HTMLElement)
-      ?.dataset?.layout;
-    if (indexLayout) {
-      sessionStorage.setItem("backUrl", "/");
+    const mainContent: HTMLElement | null =
+      document.querySelector("#main-content");
+    const indexLayout = mainContent?.dataset?.layout;
+    const backUrl = mainContent?.dataset?.backurl;
+    if (indexLayout && backUrl) {
+      sessionStorage.setItem("backUrl", backUrl);
     }
   });
 </script>

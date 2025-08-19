@@ -5,14 +5,16 @@ import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import { SITE } from "@/config";
+import { withBase } from "@/utils/getPath";
 
-const backUrl = SITE.showBackButton ? `${Astro.url.pathname}` : "/";
+const backUrl = SITE.showBackButton ? `${Astro.url.pathname}` : withBase("/");
+const bundlePath = withBase("/pagefind/");
 ---
 
 <Layout title={`Search | ${SITE.title}`}>
   <Header />
   <Main pageTitle="Search" pageDesc="Search any article ...">
-    <div id="pagefind-search" transition:persist data-backurl={backUrl}></div>
+    <div id="pagefind-search" transition:persist data-backurl={backUrl} data-bundlepath={bundlePath}></div>
   </Main>
   <Footer />
 </Layout>
@@ -45,6 +47,7 @@ const backUrl = SITE.showBackButton ? `${Astro.url.pathname}` : "/";
       // Init pagefind ui
       const search = new PagefindUI({
         element: "#pagefind-search",
+        bundlePath: pageFindSearch.dataset.bundlepath,
         showSubResults: true,
         showImages: false,
         processTerm: function (term: string) {

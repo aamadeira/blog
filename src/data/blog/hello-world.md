@@ -169,11 +169,12 @@ There's only so much you'll learn by simply watching a professor coding or talki
 
 ## Master's Degree
 
-After a successful Bachelor's degree, it was time to **start** my Master's. I got into my university of choice for my Bachelor's _(the one I wasn't able to enter initially because my grades weren't that great)_ and it was like getting kicked in the butt. I went there with the goal of specializing in something within the Computer Science field.
+After a successful Bachelor's degree, it was time to **start** my Master's. I got into my university of choice for my Bachelor's _(the one I wasn't able to enter initially because my grades weren't that great)_, which was one of the most prestigious universities in Portugal.
 
 ### The Disappointment 😤
 
-But that course had **Math again** _(I'm good at math, but I thought I was past that)_, and every class felt like an intro class. They were completely useless, at least for my learning method. I was going to **2-hour classes** and just sitting there listening to lectures about theory without any practical application.
+It was like getting kicked in the butt. I went there with the goal of specializing in something within the Computer Science field.
+But that program had **Math again** _(I'm good at math, but I thought I was past that)_, and every class felt like an intro class. They were completely useless, at least for my learning method. I was going to **2-hour classes** and just sitting there listening to lectures about theory without any practical application.
 
 > I wanted to DO stuff. I wanted to LEARN.
 
