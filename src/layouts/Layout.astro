@@ -1,6 +1,5 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import { PUBLIC_GOOGLE_SITE_VERIFICATION } from "astro:env/client";
 import { SITE } from "@/config";
 import "@/styles/global.css";
 import { withBase } from "@/utils/getPath";
@@ -58,12 +57,24 @@ const structuredData = {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <meta name="google-site-verification" content="vCFv_4zzHb9FIdR41ENdG7Ruqdv-5ESuPecDwsmCUEA" />
+    <meta
+      name="google-site-verification"
+      content="vCFv_4zzHb9FIdR41ENdG7Ruqdv-5ESuPecDwsmCUEA"
+    />
 
-    <link rel="icon" type="image/png" href={withBase("/favicon-96x96.png")} sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href={withBase("/favicon-96x96.png")}
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href={withBase("/favicon.svg")} />
     <link rel="shortcut icon" href={withBase("/favicon.ico")} />
-    <link rel="apple-touch-icon" sizes="180x180" href={withBase("/apple-touch-icon.png")} />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href={withBase("/apple-touch-icon.png")}
+    />
     <meta name="apple-mobile-web-app-title" content="Alex M" />
     <link rel="manifest" href={withBase("/site.webmanifest")} />
 
@@ -82,6 +93,16 @@ const structuredData = {
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={socialImageURL} />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7VG21EEZH"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-P7VG21EEZH');
+    </script>
 
     <!-- Article Published/Modified time -->
     {
@@ -125,18 +146,6 @@ const structuredData = {
     />
 
     <meta name="theme-color" content="" />
-
-    {
-      // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
-      // include google-site-verification tag in the heading
-      // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
-      PUBLIC_GOOGLE_SITE_VERIFICATION && (
-        <meta
-          name="google-site-verification"
-          content={PUBLIC_GOOGLE_SITE_VERIFICATION}
-        />
-      )
-    }
 
     <ClientRouter />
 
